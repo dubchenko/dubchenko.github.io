@@ -1,6 +1,6 @@
 <template>
   <div class="ed-logo">
-    <span>ed</span>
+    <span>ед</span>
   </div>
 </template>
 
@@ -13,14 +13,15 @@ export default {
 <style lang="scss" scoped>
 
   .ed-logo {
-    width: 2em;
-    height: 2em;
+    width: 2.25em;
+    height: 2.25em;
     background-color: #000;
-    border-radius: 1px;
+    border-radius: 0.125rem;
     position: relative;
-    color: #fff;
+    color: #76fec5;
     line-height: 1;
     font-weight: 500;
+    font-size: 0.875rem;
 
     span {
       position: absolute;

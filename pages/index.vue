@@ -24,26 +24,31 @@
         class="color-inherit text-decoration-none hover-underline mr2"
         target="_blank"
       >
-        GitHub
+        Гитхаб
       </a>
       <a
         href="http://telegram.me/dubchenko"
         class="color-inherit text-decoration-none hover-underline mr2"
         target="_blank"
       >
-        Telegram
+        Телеграм
       </a>
       <a
         href="mailto:dubchenkoegor@gmail.com"
         class="color-inherit text-decoration-none hover-underline"
         target="_blank"
       >
-        Mail
+        Почта
       </a>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  title: 'Home',
+  head: {
+    title: '- разработчик интерфейсов'
+  }
+}
 </script>
