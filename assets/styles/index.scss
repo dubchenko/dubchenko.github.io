@@ -1,14 +1,18 @@
 @import 'basscss-type-scale';
 @import 'basscss-typography';
 @import 'basscss-layout';
-@import 'basscss-align';
+// @import 'basscss-align';
 @import 'basscss-margin';
 @import 'basscss-padding';
 @import 'basscss-grid';
 @import 'basscss-flexbox';
-@import 'basscss-position';
-@import 'basscss-border';
-@import 'basscss-hide';
+// @import 'basscss-position';
+// @import 'basscss-border';
+// @import 'basscss-hide';
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -61,4 +65,11 @@ h6 a:hover,
   --blue: #07c;
   --black: #111;
   --darken: rgba(0, 0, 0, 0.0625);
+}
+
+@media (--breakpoint-md) {
+  .lg-px4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }

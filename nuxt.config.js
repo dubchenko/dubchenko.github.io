@@ -68,5 +68,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    postcss: [
+      require('postcss-custom-media')(),
+      require('postcss-custom-properties')()
+    ]
   }
 }

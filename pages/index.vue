@@ -18,24 +18,24 @@
         >Hyperskill.org</a>.
       </span>
     </div>
-    <div class="mt4 lg-mt0 h6 caps bold">
+    <div class="mt4 flex mxn1">
       <a
         href="https://github.com/dubchenko"
-        class="color-inherit text-decoration-none hover-underline mr2"
+        class="h6 caps bold color-inherit text-decoration-none hover-underline mx1"
         target="_blank"
       >
         Гитхаб
       </a>
       <a
         href="http://telegram.me/dubchenko"
-        class="color-inherit text-decoration-none hover-underline mr2"
+        class="h6 caps bold color-inherit text-decoration-none hover-underline mx1"
         target="_blank"
       >
         Телеграм
       </a>
       <a
         href="mailto:dubchenkoegor@gmail.com"
-        class="color-inherit text-decoration-none hover-underline"
+        class="h6 caps bold color-inherit text-decoration-none hover-underline mx1"
         target="_blank"
       >
         Почта

@@ -1,9 +1,9 @@
 <template>
-  <div class="px3">
+  <div class="px3 lg-px4">
     <TheHeader />
-    <div class="py3">
+    <main class="py3">
       <Nuxt />
-    </div>
+    </main>
   </div>
 </template>
 
