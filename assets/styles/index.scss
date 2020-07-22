@@ -18,8 +18,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5;
   margin: 0;
-  color: #111;
-  background-color: #fff;
+  color: var(--theme-text);
+  background-color: var(--theme-background);
+  transition:
+    background-color 0.25s ease-in-out,
+    color 0.25s ease-in-out;
 }
 
 .hover-underline:hover {
@@ -28,10 +31,10 @@ body {
 
 a {
   text-decoration: none;
-  color: initial;
+  color: inherit;
 
   &:hover {
-    color: #2424ff;
+    color: var(--theme-accent);
   }
 }
 
@@ -51,23 +54,19 @@ a {
   color: #fff;
 }
 
-.blue {
-  color: var(--blue);
-}
-
 .gray {
-  color: var(--gray);
-}
-
-.darken {
-  color: var(--darken);
+  color: var(--theme-gray);
+  transition: color 0.25s ease-in-out;
 }
 
 :root {
-  --gray: #ccc;
-  --blue: #07c;
-  --black: #111;
-  --darken: rgba(0, 0, 0, 0.0625);
+  --theme-text: #fff;
+  --theme-background: #000;
+  --theme-primary: #0ff;
+  --theme-secondary: #0fc;
+  --theme-accent: #f0f;
+  --theme-muted: #111;
+  --theme-gray: #888;
 }
 
 @media (--breakpoint-md) {

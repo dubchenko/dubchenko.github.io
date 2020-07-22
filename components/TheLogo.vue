@@ -15,13 +15,16 @@ export default {
   .ed-logo {
     width: 2.25em;
     height: 2.25em;
-    background-color: #2424ff;
+    background-color: var(--theme-accent);
     border-radius: 0.125rem;
     position: relative;
-    color: #76fec5;
+    color: var(--theme-primary);
     line-height: 1;
     font-weight: 500;
     font-size: 0.75rem;
+    transition:
+      background-color 0.25s ease-in-out,
+      color 0.25s ease-in-out;
 
     span {
       position: absolute;
