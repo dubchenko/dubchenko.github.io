@@ -1,7 +1,7 @@
 <template>
   <div class="px3 lg-px4">
     <TheHeader />
-    <main class="py3">
+    <main class="py1 lg-px4">
       <Nuxt />
     </main>
   </div>

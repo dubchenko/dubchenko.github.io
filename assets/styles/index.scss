@@ -22,14 +22,17 @@ body {
   background-color: #fff;
 }
 
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover,
 .hover-underline:hover {
   text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+
+  &:hover {
+    color: #2424ff;
+  }
 }
 
 .inline-flex {

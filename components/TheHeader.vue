@@ -1,9 +1,20 @@
 <template>
-  <header class="py3">
-    <div class="flex items-center">
+  <header class="py2 lg-px4 flex items-center">
+    <nuxt-link
+      class="flex items-center mr2"
+      to="/"
+    >
       <the-logo class="mr2" />
-      <span class="h3 bold">Егор Дубченко</span>
-    </div>
+      <h4 class="h5 caps bold">
+        Егор Дубченко
+      </h4>
+    </nuxt-link>
+    <nuxt-link
+      class="h5 caps bold"
+      to="/notes"
+    >
+      Заметки
+    </nuxt-link>
   </header>
 </template>
 
