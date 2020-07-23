@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/notes", (function(a){return {data:[{notes:[{title:"Моя первая запись",slug:"hello",createdAt:a},{title:"Моя вторая запись",slug:"hello2",createdAt:a}]}],fetch:[],mutations:void 0}}("2020-07-22T10:18:18.444Z")));
