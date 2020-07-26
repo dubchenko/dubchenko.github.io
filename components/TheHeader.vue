@@ -1,5 +1,5 @@
 <template>
-  <header class="py2 lg-px4 flex items-center">
+  <header class="flex items-center">
     <nuxt-link
       class="flex items-center mr2"
       to="/"
@@ -15,12 +15,12 @@
     >
       Заметки
     </nuxt-link>
-    <span
+    <!-- <span
       class="ml-auto"
       @click="changeTheme()"
     >
       Color mode
-    </span>
+    </span> -->
   </header>
 </template>
 

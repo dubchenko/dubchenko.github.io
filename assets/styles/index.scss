@@ -34,7 +34,7 @@ a {
   color: inherit;
 
   &:hover {
-    color: var(--theme-accent);
+    color: var(--theme-primary);
   }
 }
 
@@ -60,13 +60,13 @@ a {
 }
 
 :root {
-  --theme-text: #fff;
-  --theme-background: #000;
-  --theme-primary: #0ff;
-  --theme-secondary: #0fc;
-  --theme-accent: #f0f;
-  --theme-muted: #111;
-  --theme-gray: #888;
+  --theme-text: #000;
+  --theme-background: #fff;
+  --theme-primary: hsl(240, 100%, 57%);
+  --theme-secondary: hsl(260, 100%, 57%);
+  --theme-accent: hsl(280, 100%, 57%);
+  --theme-muted: #f9f9fc;
+  --theme-gray: #555;
 }
 
 @media (--breakpoint-md) {

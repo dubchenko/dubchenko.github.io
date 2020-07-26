@@ -1,7 +1,7 @@
 <template>
-  <div class="px3 lg-px4">
-    <TheHeader />
-    <main class="py1 lg-px4">
+  <div class="layout-default">
+    <TheHeader class="p2" />
+    <main class="p2">
       <Nuxt />
     </main>
   </div>
@@ -17,3 +17,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+  .layout-default {
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+</style>

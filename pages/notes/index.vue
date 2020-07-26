@@ -5,9 +5,11 @@
         v-for="note of notes"
         :key="note.slug"
       >
-        <h2 class="h2 caps">
-          {{ note.title }}
-        </h2>
+        <nuxt-link :to="`/notes/${note.slug}`">
+          <h2 class="h2 caps">
+            {{ note.title }}
+          </h2>
+        </nuxt-link>
         <small class="bold">{{ note.createdAt | formatDate }}</small>
       </li>
     </ul>
@@ -16,16 +18,14 @@
 
 <script>
 export default {
-  name: 'NotesView',
+  name: 'NotesList',
   async asyncData ({ $content, params }) {
     const notes = await $content('notes')
       .only(['title', 'slug', 'createdAt'])
       .sortBy('createdAt', 'asc')
       .fetch()
 
-    return {
-      notes
-    }
+    return { notes }
   }
 }
 </script>
