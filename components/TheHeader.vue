@@ -9,12 +9,12 @@
         Егор Дубченко
       </h4>
     </nuxt-link>
-    <nuxt-link
+    <!-- <nuxt-link
       class="h5 caps bold"
       to="/notes"
     >
       Заметки
-    </nuxt-link>
+    </nuxt-link> -->
     <!-- <span
       class="ml-auto"
       @click="changeTheme()"
