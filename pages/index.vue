@@ -1,15 +1,15 @@
 <template>
-  <div class="flex flex-column max-width-3">
-    <div class="my4">
+  <div class="flex flex-column justify-around max-width-3">
+    <div>
       <span class="h2">
         Привет! Я живу в
-        <strike class="inline-flex gray">
+        <span class="strike">
           Вологде
-        </strike>
+        </span>
         → Санкт-Петербурге и разрабатываю интерфейсы в
-        <strike class="inline-flex gray">
+        <span class="strike">
           Группа «Кронштадт»
-        </strike>
+        </span>
         →
         <a
           href="http://hyperskill.org/"
@@ -18,7 +18,7 @@
         >Hyperskill.org</a>.
       </span>
     </div>
-    <div class="mt4 flex mxn1">
+    <div class="flex mxn1">
       <a
         href="https://github.com/dubchenko"
         class="h6 caps bold color-inherit text-decoration-none mx1"
@@ -52,3 +52,36 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+  @keyframes strike {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+  .strike {
+    position: relative;
+    display: inline-flex;
+    color: var(--theme-gray);
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--theme-gray);
+    }
+
+    &:hover {
+      color: var(--theme-text);
+
+      &::after {
+        width: 0;
+      }
+    }
+  }
+
+</style>

@@ -20,13 +20,6 @@ body {
   margin: 0;
   color: var(--theme-text);
   background-color: var(--theme-background);
-  transition:
-    background-color 0.25s ease-in-out,
-    color 0.25s ease-in-out;
-}
-
-.hover-underline:hover {
-  text-decoration: underline;
 }
 
 a {
@@ -36,10 +29,6 @@ a {
   &:hover {
     color: var(--theme-primary);
   }
-}
-
-.inline-flex {
-  display: inline-flex;
 }
 
 .color-inherit {
@@ -66,7 +55,7 @@ a {
   --theme-secondary: hsl(260, 100%, 57%);
   --theme-accent: hsl(280, 100%, 57%);
   --theme-muted: #f9f9fc;
-  --theme-gray: #555;
+  --theme-gray: #808080;
 }
 
 @media (--breakpoint-md) {
